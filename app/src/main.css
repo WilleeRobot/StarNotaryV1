@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Avenir Next';
+    src: url('fonts/AvenirNext-Regular-08.eot');
+    src: url('fonts/AvenirNext-Regular-08.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AvenirNext-Regular-08.woff2') format('woff2'),
+         url('fonts/AvenirNext-Regular-08.woff') format('woff'),
+         url('fonts/AvenirNext-Regular-08.ttf')  format('truetype'),
+         url('fonts/AvenirNext-Regular-08.svg#Avenir Next') format('svg');
+
+    font-family: 'Avenir Next Ultra Light';
+    src: url('fonts/AvenirNext-UltraLight-11.eot');
+    src: url('fonts/AvenirNext-UltraLight-11.eot?#iefix') format('embedded-opentype'),
+            url('fonts/AvenirNext-UltraLight-11.woff2') format('woff2'),
+            url('fonts/AvenirNext-UltraLight-11.woff') format('woff'),
+            url('fonts/AvenirNext-UltraLight-11.ttf')  format('truetype'),
+            url('fonts/AvenirNext-UltraLight-11.svg#Avenir Next Ultra Light') format('svg');
+
+    font-family: 'Avenir Next Demi Bold';
+    src: url('fonts/AvenirNext-DemiBold-03.eot');
+    src: url('fonts/AvenirNext-DemiBold-03.eot?#iefix') format('embedded-opentype'),
+            url('fonts/AvenirNext-DemiBold-03.woff2') format('woff2'),
+            url('fonts/AvenirNext-DemiBold-03.woff') format('woff'),
+            url('fonts/AvenirNext-DemiBold-03.ttf')  format('truetype'),
+            url('fonts/AvenirNext-DemiBold-03.svg#Avenir Next Demi Bold') format('svg');
+}
+
+body {
+    font-size: 100%;
+    background-color: #000;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+.main-options {
+    display: grid;
+    justify-content: center;
+}
+
+#mainTitle {
+    font-family: 'Avenir Next Demi Bold', sans-serif;
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.625em;
+    line-height: 120%;
+    color: var(--white-color);
+    margin-top: 43px;
+}
+
+.subtitle {
+    font-family: 'Avenir Next', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
+    line-height: 120%;
+    margin-top: 26px;
+    /* or 31px */
+    color: var(--white-color);    
+}
+
+h3 {
+    font-family: 'Avenir Next', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.625em;
+    line-height: 120%;
+    color: var(--white-color);
+    /* or 31px */
+}
+
+p {
+    font-family: 'Avenir Next', sans-serif;
+    color: var(--white-color);
+}
+/* ##### IMAGE SECTION ##### */
+img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    margin-top: 31px;
+    z-index: -1;
+}
+
+.image-gradient {
+    max-width: 345px;
+    width: auto;
+    margin: auto;
+    background: radial-gradient(50.03% 50.03% at 50% 50%, rgba(0, 0, 0, 0) 0%, var(--black-color) 100%);
+}
+
+/* ##### BUTTON STYLES SECTION ##### */
+.buttonDiv {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin: 20px 0 20px;
+}
+
+button {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    width: 205px;
+    height: 34px;
+
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    color: var(--white-color)
+}
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+}
+
+button:hover span{
+    color: var(--black-color);
+    font-weight: bolder;
+}
+
+@keyframes background-color {
+    100% {
+        background-color: var(--white-color);
+        color: var(--black-color);
+    }
+}
+
+button span {
+    font-family: 'Avenir Next', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 120%;
+    /* or 14px */
+
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+
+    color: var(--white-color);
+}
+
+.labels {
+    display: inline;
+    align-items: center;
+    margin-left: 38px;
+}
+
