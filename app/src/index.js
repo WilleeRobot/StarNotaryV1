@@ -43,7 +43,7 @@ const App = {
   // Show the star owner
   starOwnerFunc: async function() {
     const {starOwner} = this.meta.methods;
-    const ownerNameRetrieved = await starOwner.call();
+    const ownerNameRetrieved = await starOwner().call();
     const owner = document.getElementById("owner");
     owner.innerHTML = ownerNameRetrieved;
   },
