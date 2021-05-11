@@ -30,15 +30,20 @@
       <div class="row">
         <div class="main-options">
           <div class="col-sm">
-            <h3>What would you like to do?</h3>        
+            <h3>What would you like to do?</h3>
+            <!-- Star name button      -->
             <div class="buttonDiv">
               <button class="actionButton" onClick="App.starNameFunc()"><span>Get star name</span></button>
               <p class="labels" id="name">Star name</p>
             </div>
+            
+            <!-- Star owner button      -->
             <div class="buttonDiv">
-              <button class="actionButton" id="owner" onClick="App.starOwnerFunc()"><span>Get star Owner</span></button>
+              <button class="actionButton" onClick="App.starOwnerFunc()"><span>Get star Owner</span></button>
               <p class="labels" id="owner">Star owner</p>
             </div>
+            
+            <!-- Claim star button      -->
             <div class="buttonDiv">
               <button class="actionButton" id="claimStar" onClick="App.claimStarFunc()"><span>Claim star</span></button>
               <p class="labels" id="status"></p>
