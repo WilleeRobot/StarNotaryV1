@@ -29,24 +29,27 @@
       </div>
       <div class="row">
         <div class="main-options">
-          <div class="col-sm">
+          <div class="col-sm content-area">
             <h3>What would you like to do?</h3>
             <!-- Star name button      -->
             <div class="buttonDiv">
-              <button class="actionButton" onClick="App.starNameFunc()"><span>Get star name</span></button>
-              <p class="labels" id="name">Star name</p>
+              <button onClick="App.starNameFunc()"><span>Get star name</span></button>
+              <p class="labels" id="name"></p>
             </div>
             
             <!-- Star owner button      -->
             <div class="buttonDiv">
-              <button class="actionButton" onClick="App.starOwnerFunc()"><span>Get star Owner</span></button>
-              <p class="labels" id="owner">Star owner</p>
+              <button onClick="App.starOwnerFunc()"><span>Get star Owner</span></button>
+              <p class="labels" id="owner"></p>
             </div>
             
             <!-- Claim star button      -->
             <div class="buttonDiv">
-              <button class="actionButton" id="claimStar" onClick="App.claimStarFunc()"><span>Claim star</span></button>
-              <p class="labels" id="status"></p>
+              <button id="claimStar" onClick="App.claimStarFunc()"><span>Claim star</span></button>
+              <div class="labels">
+                <p id="status-label"></p>
+                <p id="status"></p>
+              </div>
             </div>          
           </div>
         </div>
