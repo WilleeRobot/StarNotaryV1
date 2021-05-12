@@ -36,6 +36,20 @@ body {
     justify-content: center;
 }
 
+.content-area {
+    width: 643px;
+}
+
+@media (max-width: 848px) {
+    .buttonDiv {
+        display: block;
+    }
+
+    .content-area {
+        background-color: pink;
+    }
+}
+
 #mainTitle {
     font-family: 'Avenir Next Demi Bold', sans-serif;
     font-variant: small-caps;
@@ -155,5 +169,9 @@ button span {
     display: inline;
     align-items: center;
     margin-left: 38px;
+}
+
+.labels p {
+    margin: 0;
 }
 
