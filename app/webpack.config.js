@@ -30,6 +30,19 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(png|jp(e*)g|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000,
+              name: 'img/[hash]-[name].[ext]',
+              publicPath: 'assets',
+            }
+          }
+        ]
       }
     ]
   },
