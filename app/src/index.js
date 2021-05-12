@@ -30,6 +30,8 @@ const App = {
   // Update the status of star ownership on the page
   setStatus: function(message) {
     const status = document.getElementById("status");
+    const statusLabel = document.getElementById("status-label");
+    statusLabel.innerHTML = "Successfully claimed by owner at address:"
     status.innerHTML = message
   },
 
@@ -54,7 +56,7 @@ const App = {
     const {claimStar, starOwner} = this.meta.methods;
     await claimStar().send({from: this.account});
     const queryOwner = await starOwner().call();
-    App.setStatus("Address of star owner: " + queryOwner)
+    App.setStatus(queryOwner)
   },
 };
 
