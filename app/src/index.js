@@ -1,5 +1,6 @@
 import Web3 from "web3";
 import starNotaryArtifact from "../../build/contracts/StarNotary.json";
+import starImage from './img/1-stars-and-nebulae-in-the-constellation-cygnus.webp';
 import './main.css';
 
 const App = {
@@ -26,7 +27,7 @@ const App = {
       console.error("Could not connect to contract or chain.");
     }
   },
-
+  
   // Update the status of star ownership on the page
   setStatus: function(message) {
     const status = document.getElementById("status");
@@ -78,4 +79,5 @@ window.addEventListener("load", async function() {
   }
 
   App.start();
+  document.getElementById('star-image').src = starImage;
 });
