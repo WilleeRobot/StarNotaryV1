@@ -32,22 +32,13 @@ body {
 }
 
 .main-options {
-    display: grid;
-    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content-area {
     width: 643px;
-}
-
-@media (max-width: 848px) {
-    .buttonDiv {
-        display: block;
-    }
-
-    .content-area {
-        background-color: pink;
-    }
 }
 
 #mainTitle {
@@ -175,3 +166,21 @@ button span {
     margin: 0;
 }
 
+@media screen and (max-width: 848px) {
+    .content-area {
+        width: 400px;
+    }
+    
+    .buttonDiv {
+        display: block;
+        /* margin: 40px 0px 40px 0px; */
+    }
+
+    button {
+        margin: 40px 0px 16px;
+    }
+    
+    .labels {
+        margin-left: 0px;
+    }
+}
